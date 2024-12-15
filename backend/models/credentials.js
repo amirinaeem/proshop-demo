@@ -25,7 +25,7 @@ const validateCredentialSchema = (body) => {
       .min(7)
       .max(25)
       .required()
-      .regex(/^[0-9a-zA-Z@!#$%]$/),
+      .regex(/^[0-9a-zA-Z!#$%]$/),
   });
 
   return schema.validate(body);
