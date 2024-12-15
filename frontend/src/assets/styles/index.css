@@ -1,0 +1,178 @@
+/* Style for the container of the search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 80wv;
+}
+
+/* Style for the input field */
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 70vw; /* You can adjust the width as needed */
+  margin-right: 10px;
+}
+
+/* Style for the submit button */
+.search-container button {
+  padding: 10px 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+.search-container input[type="text"]:focus,
+.search-container button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Project Card Styles */
+/* General styles for the project layout */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-title-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.live-preview-btn {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.project-details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar {
+  background-color: #f8f9fa;
+}
+
+.sidebar h6 {
+  font-weight: bold;
+}
+
+.project-card {
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+.sidebar {
+  background-color: #f8f9fa;
+}
+
+.sidebar h6 {
+  font-weight: bold;
+}
+
+.project-card {
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.project-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
