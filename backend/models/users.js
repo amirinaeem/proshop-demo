@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
     credential: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Credential",
-      required: [true, "Please provide an credential for the user"],
+      // required: [true, "Please provide an credential for the user"],
     },
   },
   { timestamps: true }
@@ -36,9 +36,9 @@ const validateUserSchema = (body) => {
   const schema = Joi.object({
     firstName: Joi.string().min(2).max(100).required(),
     lastName: Joi.string().min(2).max(100).required(),
-    credential: Joi.string()
-      .required()
-      .regex(/^[0-9a-fA-F]{24}$/, "credentialId"),
+    // credential: Joi.string()
+    //   .required()
+    //   .regex(/^[0-9a-fA-F]{24}$/, "credentialId"),
     fullName: Joi.string().min(4).max(200).required(),
   });
 

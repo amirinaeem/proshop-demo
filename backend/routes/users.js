@@ -17,7 +17,13 @@ router.post("/", async (req, res) => {
   const { error } = validateUserSchema(req.body);
   if (error) return res.status(400).json({ error: error.details[0].message });
 
-  return res.status(200).send(req.body);
+  const user = new User(
+    _.pick(req.body, ["firstName", "lastName", "fullName"])
+  );
+
+  await user.save();
+
+  return res.status(200).send(user);
 });
 
 module.exports = router;
